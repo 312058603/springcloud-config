@@ -14,11 +14,11 @@ eureka:
     serviceUrl:
        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: springcloud-provider-user-8002
+    instance-id: springcloud-provider-user-8001
     prefer-ip-address: true
 
 info:
-  app.name: springcloud-provider-user-8002
+  app.name: springcloud-provider-user-8001
   company.name: com.wpx
   build.artifactId: $project.artifactId$
   build.version: $project.version$
@@ -36,7 +36,7 @@ server:
   port: 8001
 
 spring:
-  profiles: dev
+  profiles: pro
   application:
     name: springcloud-provider-user
 
@@ -45,11 +45,11 @@ eureka:
     serviceUrl:
        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: springcloud-provider-user-8002
+    instance-id: springcloud-provider-user-8001
     prefer-ip-address: true
 
 info:
-  app.name: springcloud-provider-user-8002
+  app.name: springcloud-provider-user-8001
   company.name: com.wpx
   build.artifactId: $project.artifactId$
   build.version: $project.version$
