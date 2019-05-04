@@ -8,7 +8,7 @@ spring:
 spring:
   profiles: dev
   application:
-    name: springcloud-provider-user-8001-dev
+    name: springcloud-provider-user-8001
     
 server:
   port: 8001
@@ -41,7 +41,7 @@ management:
 spring:
   profiles: pro
   application:
-    name: springcloud-provider-user-8001-pro
+    name: springcloud-provider-user-8001
     
 server:
   port: 8001
