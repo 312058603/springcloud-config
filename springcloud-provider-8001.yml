@@ -11,10 +11,6 @@ spring:
 server:
   port: 8001
 
-spring:
-  application:
-      name: springcloud-provider-user
-
 eureka:
   client:
     serviceUrl:
@@ -45,10 +41,6 @@ spring:
 
 server:
   port: 8001
-
-spring:
-  application:
-      name: springcloud-provider-user
 
 eureka:
   client:
