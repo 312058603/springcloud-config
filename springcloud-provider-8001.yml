@@ -3,7 +3,6 @@
     activce:
         -dev
 ---
-
 spring:
   profiles: dev  
   application:
@@ -15,12 +14,10 @@ server:
 spring:
   application:
       name: springcloud-provider-user
-     # name: springcloud-provider-user 微服务名字
 
 eureka:
   client:
     serviceUrl:
-       #defaultZone: http://localhost:7001/eureka/
        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
     instance-id: springcloud-provider-user-8001
@@ -40,7 +37,6 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
-
 ---
 spring:
   profiles: pro
@@ -53,12 +49,10 @@ server:
 spring:
   application:
       name: springcloud-provider-user
-     # name: springcloud-provider-user 微服务名字
 
 eureka:
   client:
     serviceUrl:
-       #defaultZone: http://localhost:7001/eureka/
        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
     instance-id: springcloud-provider-user-8001
@@ -77,6 +71,5 @@ management:
         include: "*"
       cors:
         allowed-origins: "*"
-        allowed-methods: "*"
-      
+        allowed-methods: "*"  
 # 请保存为UTF-8格式
