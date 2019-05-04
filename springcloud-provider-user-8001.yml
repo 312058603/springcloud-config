@@ -2,7 +2,7 @@
 spring:
   profiles:
     activce:
-        -test
+        -dev
 ---
 
 spring:
