@@ -1,11 +1,13 @@
 spring:
   profiles:
-  activce: -dev
+    activce:
+        -dev
 ---
+
 spring:
   profiles: dev  
   application:
-    name: springcloud-eureka-7001-dev
+    name: springcloud-config-dev
     
 server:
   port: 7001
@@ -19,10 +21,11 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 ---
+
 spring:
   profiles: pro
   application:
-    name: springcloud-eureka-7001-pro
+    name:springcloud-config-pro
 
 server:
   port: 7001
@@ -35,4 +38,5 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+      
 # 请保存为UTF-8格式
