@@ -23,9 +23,9 @@ eureka:
 
 ---
 spring:
-  profiles: test
+  profiles: pro
   application:
-    name:springcloud-config-test
+    name:springcloud-config-pro
 
 server:
   port: 7001
