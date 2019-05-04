@@ -1,13 +1,13 @@
 spring:
   profiles:
     activce:
-        -dev
+        -test
 ---
 
 spring:
-  profiles: dev  
+  profiles: test  
   application:
-    name: springcloud-eureka-7001-dev
+    name: springcloud-eureka-7001-test
     
 server:
   port: 7001
@@ -23,9 +23,9 @@ eureka:
 ---
 
 spring:
-  profiles: test
+  profiles: release
   application:
-    name: springcloud-eureka-7001-test
+    name: springcloud-eureka-7001
 
 server:
   port: 7001
