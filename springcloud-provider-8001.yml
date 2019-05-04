@@ -2,14 +2,14 @@
   profiles:
     activce:
         -dev
----
-spring:
-  profiles: dev  
-  application:
-    name: springcloud-provider-user-8001
-    
+---  
 server:
   port: 8001
+  
+spring:
+  profiles: dev
+  application:
+    name: springcloud-provider-user-8001
 
 eureka:
   client:
@@ -34,13 +34,13 @@ management:
         allowed-origins: "*"
         allowed-methods: "*"
 ---
+server:
+  port: 8001
+  
 spring:
   profiles: pro
   application:
     name: springcloud-provider-user-8001
-
-server:
-  port: 8001
 
 eureka:
   client:
