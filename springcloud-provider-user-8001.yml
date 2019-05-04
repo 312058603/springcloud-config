@@ -37,9 +37,9 @@ management:
 ---
 
 spring:
-  profiles: pro
+  profiles: test
   application:
-    name: springcloud-provider-user-8001-pro
+    name: springcloud-provider-user-8001-test
     
 server:
   port: 8001
