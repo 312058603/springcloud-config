@@ -35,6 +35,7 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
+        
 ---
 
 spring:
@@ -67,4 +68,3 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
-# 请保存为UTF-8格式
