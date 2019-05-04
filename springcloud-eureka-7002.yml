@@ -1,10 +1,13 @@
 spring:
   profiles:
+    activce:
+        -dev
 ---
+
 spring:
-  profiles: dev  
+  profiles: test  
   application:
-    name: springcloud-eureka-7002-dev
+    name: springcloud-eureka-7002-test
     
 server:
   port: 7002
@@ -18,10 +21,11 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
 ---
+
 spring:
-  profiles: pro
+  profiles: release
   application:
-    name: springcloud-eureka-7002-pro
+    name: springcloud-eureka-7002
 
 server:
   port: 7002
