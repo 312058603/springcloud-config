@@ -1,6 +1,9 @@
 ﻿spring:
   profiles:
+    activce:
+        -dev
 ---
+
 server:
   port: 8001
 
@@ -32,6 +35,7 @@ management:
         allowed-origins: "*"
         allowed-methods: "*"
 ---
+
 server:
   port: 8001
 
