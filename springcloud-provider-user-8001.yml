@@ -6,7 +6,7 @@ spring:
 ---
 
 spring:
-  profiles: dev
+  profiles: testA
   application:
     name: springcloud-provider-user-8001
     
@@ -39,7 +39,7 @@ management:
 ---
 
 spring:
-  profiles: pro
+  profiles: testB
   application:
     name: springcloud-provider-user-8001
     
