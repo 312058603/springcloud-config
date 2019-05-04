@@ -1,4 +1,5 @@
-﻿spring:
+﻿
+spring:
   profiles:
     activce:
         -dev
@@ -37,9 +38,9 @@ management:
 ---
 
 spring:
-  profiles: test
+  profiles: pro
   application:
-    name: springcloud-provider-user-8001-test
+    name: springcloud-provider-user-8001-pro
     
 server:
   port: 8001
