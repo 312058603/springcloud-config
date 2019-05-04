@@ -6,9 +6,9 @@ spring:
 ---
 
 spring:
-  profiles: test
+  profiles: testA
   application:
-    name: springcloud-provider-user-8001-test
+    name: springcloud-provider-user-8001-testA
     
 server:
   port: 8001
@@ -18,11 +18,11 @@ eureka:
     serviceUrl:
        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: springcloud-provider-user-8001-test
+    instance-id: springcloud-provider-user-8001-testA
     prefer-ip-address: true
 
 info:
-  app.name: springcloud-provider-user-8001-test
+  app.name: springcloud-provider-user-8001-testA
   company.name: com.wpx
   build.artifactId: $project.artifactId$
   build.version: $project.version$
@@ -38,10 +38,10 @@ management:
         
 ---
 
-spring: release
+spring: testB
   profiles: 
   application:
-    name: springcloud-provider-user-8001
+    name: springcloud-provider-user-8001-testB
     
 server:
   port: 8001
@@ -51,11 +51,11 @@ eureka:
     serviceUrl:
        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: springcloud-provider-user-8001
+    instance-id: springcloud-provider-user-8001-testB
     prefer-ip-address: true
 
 info:
-  app.name: springcloud-provider-user-8001
+  app.name: springcloud-provider-user-8001-testB
   company.name: com.wpx
   build.artifactId: $project.artifactId$
   build.version: $project.version$
