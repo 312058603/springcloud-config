@@ -38,8 +38,8 @@ management:
         
 ---
 
-spring: testB
-  profiles: 
+spring: 
+  profiles: testB
   application:
     name: springcloud-provider-user-8001-testB
     
