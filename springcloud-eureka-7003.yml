@@ -1,12 +1,10 @@
 spring:
   profiles:
-    activce:
-        -dev
 ---
 spring:
   profiles: dev  
   application:
-    name:springcloud-config-dev
+    name: springcloud-eureka-7003-dev
     
 server:
   port: 7003
@@ -23,7 +21,7 @@ eureka:
 spring:
   profiles: pro
   application:
-    name:springcloud-config-pro
+    name: springcloud-eureka-7003-pro
 
 server:
   port: 7003

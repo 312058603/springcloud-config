@@ -1,7 +1,5 @@
 spring:
   profiles:
-    activce:
-        -dev
 ---
 spring:
   profiles: dev  
@@ -36,5 +34,4 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
-      
 # 请保存为UTF-8格式
