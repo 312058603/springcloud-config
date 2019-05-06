@@ -9,9 +9,15 @@ spring:
   profiles: test
   application:
     name: springcloud-provider-user-test
-    
+
 server:
   port: 8002
+    
+eureka: 
+  instance:
+    instance-id: springcloud-provider-user-8002-test
+    prefer-ip-address: true    
+   
         
 ---
 
@@ -19,6 +25,12 @@ spring:
   profiles: release
   application:
     name: springcloud-provider-user
-    
+
 server:
   port: 8002
+
+eureka: 
+  instance:
+    instance-id: springcloud-provider-user-8002
+    prefer-ip-address: true    
+    
