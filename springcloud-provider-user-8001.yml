@@ -9,19 +9,9 @@ spring:
   profiles: test
   application:
     name: springcloud-provider-user-test
-  rabbitmq:
-   host: localhost
-   port: 5672
-   username: guest
-   password: guest
-  cloud:
-   bus:
-    enabled: true
-    trace:
-     enabled: true  
     
 server:
-  port: 8008
+  port: 8007
           
 ---
 
@@ -29,16 +19,6 @@ spring:
   profiles: release
   application:
     name: springcloud-provider-user
-  rabbitmq:
-   host: localhost
-   port: 5672
-   username: guest
-   password: guest
-  cloud:
-   bus:
-    enabled: true
-    trace:
-     enabled: true
     
 server:
   port: 8001
