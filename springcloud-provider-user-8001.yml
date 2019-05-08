@@ -10,7 +10,7 @@ spring:
   application:
     name: springcloud-provider-user-test
     
-testVal:"100"
+testVal: 100
     
 ---
 
@@ -19,4 +19,4 @@ spring:
   application:
     name: springcloud-provider-user
     
-testVal:"100"
+testVal: 100
