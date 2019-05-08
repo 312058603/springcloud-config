@@ -10,9 +10,8 @@ spring:
   application:
     name: springcloud-provider-user-test
     
-server:
-  port: 8008
-          
+testVal:"100"
+    
 ---
 
 spring: 
@@ -20,5 +19,4 @@ spring:
   application:
     name: springcloud-provider-user
     
-server:
-  port: 8008
+testVal:"100"
