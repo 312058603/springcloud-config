@@ -9,11 +9,9 @@ spring:
   application:
     name: springcloud-provider-user-test  
   zipkin:
-    sender:
-      type: web
     base-url: http://localhost:9411
     
-testVal: 8001-test
+testVal: 666
     
 ---
 
@@ -22,8 +20,6 @@ spring:
   application:
     name: springcloud-provider-user
   zipkin:
-    sender:
-      type: web
     base-url: http://localhost:9411
     
-testVal: 8001
+testVal: 666
