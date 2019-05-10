@@ -1,0 +1,25 @@
+﻿spring:
+  profiles:
+    activce:
+        -dev
+---
+
+spring:
+  profiles: test
+  application:
+    name: springcloud-provider-user-test  
+  zipkin:
+    base-url: http://localhost:9411
+    
+testVal: 8002-test
+    
+---
+
+spring: 
+  profiles: release
+  application:
+    name: springcloud-provider-user
+  zipkin:
+    base-url: http://localhost:9411
+    
+testVal: 8002
