@@ -1,0 +1,4 @@
+git status//用于提交修改的文件
+git add .
+git commit -m "1"
+git push origin master
