@@ -22,4 +22,12 @@ spring:
   zipkin:
     base-url: http://localhost:9411
     
+#负载均衡策略配置
+springcloud-provider-student:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.wpx.myrule.StudentRule
+springcloud-provider-teacher:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.wpx.myrule.TeacherRule
+    
 testVal: 666
