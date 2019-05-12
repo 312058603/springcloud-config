@@ -1,0 +1,40 @@
+﻿spring:
+  profiles:
+    activce:
+        -dev
+---
+
+spring:
+  profiles: test
+  application:
+    name: springcloud-hystrix-trbube-test
+
+turbine:
+  app-config: springcloud-provider-user,springcloud-provider-student,springcloud-provider-teache
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host-port: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream   
+    
+    
+testVal: 666
+    
+---
+
+spring: 
+  profiles: release
+  application:
+    name: sspringcloud-hystrix-trbube
+ 
+turbine:
+  app-config: springcloud-provider-user,springcloud-provider-student,springcloud-provider-teacher
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host-port: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream
+ 
+testVal: 666
