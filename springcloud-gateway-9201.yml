@@ -1,0 +1,21 @@
+﻿spring:
+  profiles:
+    activce:
+        -dev
+---
+
+spring:
+  profiles: test
+  application:
+    name: springcloud-gateway-test  
+    
+testVal: 666
+    
+---
+
+spring: 
+  profiles: release
+  application:
+    name: springcloud-gateway
+    
+testVal: 666
